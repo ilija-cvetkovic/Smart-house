@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://www.gstatic.com/firebasejs/4.3.0/firebase.js"></script>
+    <title>PAMETNA KUĆA</title>
+    <link rel="stylesheet" type="text/css" href="css.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script>
+        const firebaseConfig = {
+            apiKey: "AIzaSyAhF4WavcNBNa2sCch27oeaZdDymq9WhGc",
+            authDomain: "pametna-kuca.firebaseapp.com",
+            databaseURL: "https://pametna-kuca.firebaseio.com",
+            projectId: "pametna-kuca",
+            storageBucket: "",
+            messagingSenderId: "781988613831",
+            appId: "1:781988613831:web:3f98b6d51439ca68"
+        };
+
+
+        firebase.initializeApp(firebaseConfig);
+    </script>
+</head>
+
+<body onload="startTime()">
+    <div class="row">
+        <h2>PAMETNA KUĆA</h2>
+        <div class="container">
+            <div>
+                <label>TEMPERATURA</label>
+                <h1 id="temp"></h1>
+            </div>
+            <div>
+                <label>VLAŽNOST VAZDUHA</label>
+                <h1 id="vlaznost"></h1>
+            </div>
+            <div>
+                <label>ZAGUŠLJIVOST PROSTORIJE</label>
+                <h1 id="co2"></h1>
+            </div>
+            <div>
+                <label>POŽAR</label>
+                <h1 id="pozar"></h1>
+            </div>
+            <div>
+                <label>KIŠA</label>
+                <h1 id="kisa"></h1>
+            </div>
+        </div>
+    </div>
+    <div class="a">
+        <label></label>
+        <h1 id="vreme" align="center" height : 50%></h1>
+    </div>
+    <script src="js/kuca.js"></script>
+</body>
+
+</html>
